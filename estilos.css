@@ -1,0 +1,107 @@
+
+        /* Regla 1: Utilizar el selector universal * para cambiar el tipo de fuente del documento */
+        * {
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box; /* Buena práctica para el modelo de caja */
+        }
+
+        /* Regla 2: El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda */
+        body {
+            margin: 0;
+            /* Usamos un max-width y centrado para asegurar que el relleno de 20% funcione bien en pantallas muy anchas */
+            padding: 0 20%;
+            background-color: #f0f8fff1; /* Color de fondo claro para mejor contraste (similar a lightblue/cyan) */
+        }
+
+        /* Regla 3: Los elementos h1 estarán subrayados, de color darkcyan y alineados al centro */
+        h1 {
+            text-decoration: underline;
+            color: darkcyan;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        /* Regla 4: Los elementos con clase selector tendrán color lightcyan (Color de texto principal) */
+        .selector {
+            color: lightcyan; 
+        }
+
+        /* Regla 5: Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px; y esquinas redondeadas border-radius con valor de 5px */
+        .selectors {
+            padding: 5%;
+            border: solid darkcyan 1px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Regla 6: Los elementos con identificador (id) universal tendrán color lightgoldenrodyellow (Color de texto principal) */
+        #universal {
+            color: lightgoldenrodyellow;
+        }
+
+        /* Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px */
+        h2.selector, h2#universal {
+            background-color: darkcyan;
+            padding: 1%;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            /* El color del texto para h2.selector es lightcyan (Regla 4)
+               El color del texto para h2#universal es lightgoldenrodyellow (Regla 6)
+               Estos colores se aplican automáticamente por la precedencia de selectores.
+            */
+        }
+
+        /* Regla 8: Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco */
+        span {
+            font-weight: 900;
+            background-color: black;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        /* Regla 9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none */
+        li > a {
+            text-decoration: none;
+            color: darkcyan; /* Hago el color de enlace explícito para que se vea */
+            font-weight: 600;
+        }
+        
+        /* Regla 10: Los elementos h3 tendrán background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
+        h3 {
+            background-color: rgba(0, 139, 139, 0.529);
+            padding: 0.5em; 
+            border-radius: 5px;
+            text-align: center;
+            color: #333; /* Color de texto oscuro para buen contraste */
+        }
+
+        /* Regla 11: Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho width de 100% */
+        #gallery div {
+            width: 100%;
+            margin-bottom: 20px; /* Espacio entre las imágenes */
+        }
+
+        /* Regla 12: Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px; y esquinas redondeadas con valor de 5px */
+        img {
+            width: 100%;
+            border: solid darkcyan 1px;
+            border-radius: 5px;
+            display: block;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Ajuste para pantallas pequeñas (móviles) */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 5%; /* Reducir el relleno en pantallas pequeñas */
+            }
+}
