@@ -1,5 +1,5 @@
 
-        /* Regla 1: Utilizar el selector universal * para cambiar el tipo de fuente del documento */
+        /* Regla 1:     * para cambiar el tipo de fuente del documento */
         * {
             font-family: 'Open Sans', sans-serif;
             box-sizing: border-box; /* Buena práctica para el modelo de caja */
@@ -18,12 +18,12 @@
             text-decoration: underline;
             color: darkcyan;
             text-align: center;
-            padding-top: 20px;
+            padding-top: 20px; /*agregar un espacio interno de \(20\) píxeles en la parte superior de un elemento, entre su contenido y su borde*/
             margin-top: 0;
             font-size: 2.5em;
         }
 
-        /* Regla 4: Los elementos con clase selector tendrán color lightcyan (Color de texto principal) */
+        /* Regla 4: Los elementos con clase selector tendrán color lightcyan (Color de texto) (se pone punto para las clases) */
         .selector {
             color: lightcyan; 
         }
@@ -35,7 +35,7 @@
             border-radius: 5px;
             background-color: #ffffff;
             margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*aplica una somba a la box del color dessitgat.*/
         }
 
         /* Regla 6: Los elementos con identificador (id) universal tendrán color lightgoldenrodyellow (Color de texto principal) */
@@ -49,11 +49,10 @@
             padding: 1%;
             border-radius: 5px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 20px; /*Margen superior 20 pixeles*/
             margin-bottom: 10px;
             /* El color del texto para h2.selector es lightcyan (Regla 4)
                El color del texto para h2#universal es lightgoldenrodyellow (Regla 6)
-               Estos colores se aplican automáticamente por la precedencia de selectores.
             */
         }
 
@@ -62,29 +61,27 @@
             font-weight: 900;
             background-color: black;
             color: white;
-            padding: 3px 8px;
+            padding: 3px 8px; /* padding: crear un espacio interno alrededor del contenido de un elemento, separándolo de su borde*/
             border-radius: 3px;
-            white-space: nowrap;
+            white-space: nowrap; 
         }
 
         /* Regla 9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none */
         li > a {
             text-decoration: none;
-            color: darkcyan; /* Hago el color de enlace explícito para que se vea */
-            font-weight: 600;
+            font-weight: 600; /* font-weihgt: para controlar el grosor o la "pesadez" de las letras en un texto, determinando qué tan negrita o fina se muestra la fuente*/
         }
         
         /* Regla 10: Los elementos h3 tendrán background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
         h3 {
             background-color: rgba(0, 139, 139, 0.529);
-            padding: 0.5em; 
+            padding: 0.5px; 
             border-radius: 5px;
             text-align: center;
-            color: #333; /* Color de texto oscuro para buen contraste */
         }
 
         /* Regla 11: Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho width de 100% */
-        #gallery div {
+        gallery div {
             width: 100%;
             margin-bottom: 20px; /* Espacio entre las imágenes */
         }
@@ -94,14 +91,7 @@
             width: 100%;
             border: solid darkcyan 1px;
             border-radius: 5px;
-            display: block;
+            display: block; /* establece que un elemento ocupe todo el ancho disponible, comenzando siempre en una nueva línea y apilando otros elementos debajo */
             height: auto;
-            object-fit: cover;
+            object-fit: cover; /* redimensiona una imagen o video para llenar su contenedor por completo, manteniendo su relación de aspecto y recortando los bordes si es necesario */
         }
-
-        /* Ajuste para pantallas pequeñas (móviles) */
-        @media (max-width: 768px) {
-            body {
-                padding: 0 5%; /* Reducir el relleno en pantallas pequeñas */
-            }
-}
