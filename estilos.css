@@ -1,5 +1,5 @@
 
-        /* Regla 1:     * para cambiar el tipo de fuente del documento */
+        /* Regla 1:* para cambiar el tipo de fuente del documento */
         * {
             font-family: 'Open Sans', sans-serif;
             box-sizing: border-box; /* Buena práctica para el modelo de caja */
@@ -46,7 +46,7 @@
         /* Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px */
         h2.selector, h2#universal {
             background-color: darkcyan;
-            padding: 1%;
+            padding: 1%; /* padding: crear un espacio interno alrededor del contenido de un elemento, separándolo de su borde*/
             border-radius: 5px;
             margin-top: 20px; /*Margen superior 20 pixeles*/
             margin-bottom: 10px;
@@ -74,7 +74,7 @@
         /* Regla 10: Los elementos h3 tendrán background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
         h3 {
             background-color: rgba(0, 139, 139, 0.529);
-            padding: 0.5px; 
+            padding: 0.5px; /* padding: crear un espacio interno alrededor del contenido de un elemento, separándolo de su borde*/
             border-radius: 5px;
             text-align: center;
         }
@@ -99,10 +99,10 @@
 
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; /*fusiona los bordes de las celdas de una tabla para que se vean como una sola línea, eliminando el espacio entre ellos.*/
             font-family: Arial, sans-serif;
             isplay: block; /* establece que un elemento ocupe todo el ancho disponible, comenzando siempre en una nueva línea y apilando otros elementos debajo */
-            height: auto;
+            height: auto; /*para que la altura de un elemento se ajuste automáticamente al tamaño de su contenido.*/
         }
         
         th, td {
