@@ -94,3 +94,34 @@
             height: auto;
             object-fit: cover; /* redimensiona una imagen o video para llenar su contenedor por completo, manteniendo su relación de aspecto y recortando los bordes si es necesario */
         }
+
+        /*Estilos de la tabla necesarios para que quede igual*/
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            isplay: block; /* establece que un elemento ocupe todo el ancho disponible, comenzando siempre en una nueva línea y apilando otros elementos debajo */
+            height: auto;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid rgba(87, 87, 87, 0.288);
+        
+        }
+        
+        th {
+            background-color: gainsboro;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(87, 87, 87, 0.288); /* Color de fondo gris claro para filas pares  */
+        }
+        /* Estilos para el texto subrayado y en cursiva en la columna Selector  */
+        td:first-child, td:first-child * {
+            text-decoration: underline;
+            font-style: italic;
+        }
