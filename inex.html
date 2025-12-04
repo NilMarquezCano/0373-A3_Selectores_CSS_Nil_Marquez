@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
-    <link rel="icon" type="image/x-icon" href="/multimedia/imagenes/rayo.svg">
+    <link rel="icon" type="image/x-icon" href="./multimedia/imagenes/rayo.svg"> <!--icono sacado de fontawsome y descargado y localizado en carpeta multimedia de mis archivos-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -15,11 +15,11 @@
 <body> <!-- Regla 2. El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda-->
 
     
-    <h1>CSS Selectors</h1>
+    <h1>CSS Selectors</h1> <!--Regla 3. Los elementos h1 estarán subrayados (text-decoration: underline;), de color darkcyan y alineados al centro-->
     <p>A CSS selector selects the HTML element(s) you want to style.</p>
 
     <div class="selectors">
-        <h2>CSS Selectors</h2>
+        <h2>CSS Selectors</h2> <!--Regla 5. Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px; y esquinas redondeadas border-radius con valor de 5px-->
         <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
         <p>We can divide CSS selectors into five categories:</p>
         <ul>
@@ -31,7 +31,9 @@
         </ul>
     </div>
     <hr>
-    <h2 class="selector">The CSS <span>element</span> Selector</h2>
+    <h2 class="selector">The CSS <span>element</span> Selector</h2> 
+    <!--Regla 7. Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px-->
+    <!--Regla 8. Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco-->
     <p>The element selector selects HTML elements based on the element <span>name</span> (body, p, h1, h5, a, div, etc.).</p>
     <hr>
     <h2 class="selector">The CSS <span>id</span> Selector</h2>
@@ -49,17 +51,18 @@
 
     <div>
         <p>Use our <a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selector Tester</a> to demonstrate the different selectors. </p>
+        <!--Regla 9. Los elementos a que sean hijos directos de algún li tendrán text-decoration: none-->
     </div>
     <hr>
 
     <div id="gallery">
         <div>
-            <h3>CSS Syntax</h3>
+            <h3>CSS Syntax</h3> <!--Regla 10. Los elementos h3 tendrán color de fondo background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px-->
             <img src="./multimedia/imagenes/imagencssuno.png" alt="imagencssuno">
         </div>
-        <div>
+        <div> <!--Regla 11. Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho width de 100%-->
             <h3>All CSS Simple Selectors</h3>
-            <img src="./multimedia/imagenes/tabla2.png" alt="tabla2 ">
+            <img src="./multimedia/imagenes/tabla2.png" alt="tabla2 "> <!--Regla 12. Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px; y esquinas redondeadas con valor de 5px-->
         </div>
     </div>
 
